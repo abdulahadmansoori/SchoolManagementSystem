@@ -1,0 +1,23 @@
+/* .col-2 div {
+    background: rgb(203, 203, 203);
+}
+
+.col-8 div {
+    background: rgb(203, 203, 203);
+
+} */
+.Main-Menu{
+    height: 100vh;
+    background: rgb(235, 235, 235);
+}
+.Main-Content{
+    /* text-align: center; */
+    background: rgb(245, 245, 245);
+}
+.Main-Content .content{
+    /* background: #fff; */
+    background: rgb(235, 235, 235);
+    margin-top: 4%;
+    padding: 2%;
+    border-radius: 10px;
+}

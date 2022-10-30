@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./jquery-3.6.1.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Management System</title>
+</head>
+
+<body>
+    <header>
+        <h3>School Management System</h3>
+    </header>
+    <section class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 Main-Menu">
+                    <div>
+                        <!-- navbar -->
+                        <ul>
+                            <li>Registration
+                                <ul>
+                                    <li>Add Student</li>
+                                    <li>Add Faculty</li>
+                                    <li>Add staff</li>
+                                </ul>
+                            </li>
+                            <li>Management
+                                <ul>
+                                    <li>Class</li>
+                                    <li>Timetable</li>
+                                    <li>Attendance</li>
+                                </ul>
+                            </li>
+                            <li>Fee
+                                <ul>
+                                    <li>Update Status</li>
+                                    <li>Check Fee</li>
+                                </ul>
+                            </li>
+                            <li>Students
+                                <ul>
+                                    <li>Details</li>
+                                    <li>Admissions</li>
+                                    <li>Promote</li>
+                                </ul>
+                            </li>
+                            <li>Teachers
+                                <ul>
+                                    <li>Details</li>
+                                    <li>Appoint</li>
+                                </ul>
+                            </li>
+                            <li>Examination
+                                <ul>
+                                    <li>Results</li>
+                                    <li>Timetable</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-8 Main-Content">
+                    <!-- <div class="row">
+                        <div class="col-sm-4">
+                            total students
+                            <div class="content">
+                                <h6>total students</h6>
+                                <h2>520</h2>
+                                <h6>500-20</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            total teachers
+                            <div class="content">
+                                <h6>total teachers</h6>
+                                <h2>520</h2>
+                                <h6>500-20</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            total staff
+                            <div class="content">
+                                <h6>total staff</h6>
+                                <h2>520</h2>
+                                <h6>500-20</h6>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <!-- Student Admission -->
+                        <div class="col-md-12">
+                            <form action="">
+                                <label for="std_firstName">First Name</label>
+                                <input type="text" name="std_firstName">
+                                <br>
+                                <label for="std_lastName">Last Name</label>
+                                <input type="text" name="std_lastName">
+                                <br>
+                                <label for="std_gender">Gender</label>
+                                <input type="text" name="std_gender">
+                                <br>
+                                <label for="std_email">Email</label>
+                                <input type="email" name="std_email">
+                                <br>
+                                <label for="std_DateOfBirth">Date Of Birth</label>
+                                <input type="date" name="std_DateOfBirth">
+                                <br>
+                                <label for="std_birthPlace">Place of Birth</label>
+                                <input type="text" name="std_birthPlace">
+                                <br>
+                                <label for="std_religion">Religion</label>
+                                <input type="text" name="std_religion">
+                                <br>
+                                <label for="std_nationality">Nationality</label>
+                                <input type="text" name="std_nationality">
+                                <br>
+                                <label for="std_address">Address</label>
+                                <input type="text" name="std_address">
+                                <br>
+                                <label for="std_state">State</label>
+                                <input type="text" name="std_state">
+                                <br>
+                                <label for="std_city">City</label>
+                                <input type="text" name="std_city">
+                                <br>
+                                <label for="std_bloodGroup">Blood Group</label>
+                                <input type="text" name="std_bloodGroup">
+                                <br>
+                                <label for="std_previousSchoolName">Previous School Name</label>
+                                <input type="text" name="std_previousSchoolName">
+                                <br>
+                                <label for="std_previousSchoolAddress">Previous School Address</label>
+                                <input type="text" name="std_previousSchoolAddress">
+                                <br>
+                                <label for="std_lastClass">Last Passing Class</label>
+                                <input type="text" name="std_lastClass">
+                                <br>
+                                <label for="std_appliedClass">Applied Class</label>
+                                <input type="text" name="std_appliedClass">
+                                <br>
+                                <button>add</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        others
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+</body>
+<script src="./jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+
+</html>
