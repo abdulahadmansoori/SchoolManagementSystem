@@ -1,23 +1,52 @@
-/* .col-2 div {
-    background: rgb(203, 203, 203);
-}
-
-.col-8 div {
-    background: rgb(203, 203, 203);
-
-} */
-.Main-Menu{
+.Main-Menu {
     height: 100vh;
+}
+
+.Main-Content {
     background: rgb(235, 235, 235);
 }
-.Main-Content{
-    /* text-align: center; */
-    background: rgb(245, 245, 245);
-}
-.Main-Content .content{
-    /* background: #fff; */
-    background: rgb(235, 235, 235);
+
+.Main-Content .content {
+    background: #fff;
     margin-top: 4%;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.detailsCard {
+    margin: 1% 0%;
+    background: #fff;
     padding: 2%;
     border-radius: 10px;
+}
+
+.data {
+    margin: 0.5% 0%;
+}
+
+input {
+    width: 100%;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.length25 {
+    width: 24.5%;
+}
+.length20 {
+    width: 20%;
+}
+
+.length50 {
+    width: 49.5%;
+}
+
+.length75 {
+    width: 74.5%;
+}
+
+.length100 {
+    width: 100%;
 }

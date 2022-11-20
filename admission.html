@@ -9,37 +9,38 @@
     <!-- <script src="./jquery-3.6.1.min.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Management System</title>
+    <title>Student Registration</title>
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h3>School Management System</h3>
-    </header>
+    </header> -->
     <section class="main">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-2 Main-Menu">
                     <div>
+                        <h6><a href="./index.html"> School Management System</a></h6>
                         <!-- navbar -->
                         <ul>
                             <li>Registration
                                 <ul>
-                                    <li>Add Student</li>
-                                    <li>Add Faculty</li>
-                                    <li>Add staff</li>
+                                    <li><a href="./admission.html"> Add Student </a></li>
+                                    <li><a href="./employee.html"> Add Faculty</a></li>
+                                    <li><a href="./staff.html">Add staff</a></li>
                                 </ul>
                             </li>
                             <li>Management
                                 <ul>
                                     <li>Class</li>
                                     <li>Timetable</li>
-                                    <li>Attendance</li>
+                                    <li><a href="./attendence.html"> Attendance</a></li>
                                 </ul>
                             </li>
                             <li>Fee
                                 <ul>
-                                    <li>Update Status</li>
+                                    <li><a href="./fee_status.html"> Update Status</a></li>
                                     <li>Check Fee</li>
                                 </ul>
                             </li>
@@ -66,101 +67,210 @@
 
                     </div>
                 </div>
-                <div class="col-8 Main-Content">
-                    <!-- <div class="row">
-                        <div class="col-sm-4">
-                            total students
-                            <div class="content">
-                                <h6>total students</h6>
-                                <h2>520</h2>
-                                <h6>500-20</h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            total teachers
-                            <div class="content">
-                                <h6>total teachers</h6>
-                                <h2>520</h2>
-                                <h6>500-20</h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            total staff
-                            <div class="content">
-                                <h6>total staff</h6>
-                                <h2>520</h2>
-                                <h6>500-20</h6>
-                            </div>
-                        </div>
-                    </div> -->
+                <div class="col-10 Main-Content">
                     <div class="row">
                         <!-- Student Admission -->
                         <div class="col-md-12">
                             <form action="">
-                                <label for="std_firstName">First Name</label>
-                                <input type="text" name="std_firstName">
-                                <br>
-                                <label for="std_lastName">Last Name</label>
-                                <input type="text" name="std_lastName">
-                                <br>
-                                <label for="std_gender">Gender</label>
-                                <input type="text" name="std_gender">
-                                <br>
-                                <label for="std_email">Email</label>
-                                <input type="email" name="std_email">
-                                <br>
-                                <label for="std_DateOfBirth">Date Of Birth</label>
-                                <input type="date" name="std_DateOfBirth">
-                                <br>
-                                <label for="std_birthPlace">Place of Birth</label>
-                                <input type="text" name="std_birthPlace">
-                                <br>
-                                <label for="std_religion">Religion</label>
-                                <input type="text" name="std_religion">
-                                <br>
-                                <label for="std_nationality">Nationality</label>
-                                <input type="text" name="std_nationality">
-                                <br>
-                                <label for="std_address">Address</label>
-                                <input type="text" name="std_address">
-                                <br>
-                                <label for="std_state">State</label>
-                                <input type="text" name="std_state">
-                                <br>
-                                <label for="std_city">City</label>
-                                <input type="text" name="std_city">
-                                <br>
-                                <label for="std_bloodGroup">Blood Group</label>
-                                <input type="text" name="std_bloodGroup">
-                                <br>
-                                <label for="std_previousSchoolName">Previous School Name</label>
-                                <input type="text" name="std_previousSchoolName">
-                                <br>
-                                <label for="std_previousSchoolAddress">Previous School Address</label>
-                                <input type="text" name="std_previousSchoolAddress">
-                                <br>
-                                <label for="std_lastClass">Last Passing Class</label>
-                                <input type="text" name="std_lastClass">
-                                <br>
-                                <label for="std_appliedClass">Applied Class</label>
-                                <input type="text" name="std_appliedClass">
-                                <br>
-                                <button>add</button>
+                                <div class="detailsCard">
+                                    <h6>Student Admission Form</h6>
+                                </div>
+                                <!-- student details -->
+                                <div class="detailsCard">
+                                    <div>
+                                        <div class="data length20">
+                                            <img src="./images/circle-user-solid.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span>Student Details</span>
+                                    <div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_firstName">First Name</label>
+                                            <input type="text" name="std_firstName">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_lastName">Last Name</label>
+                                            <input type="text" name="std_lastName">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_gender">Gender</label>
+                                            <select name="std_gender" class="length100">
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_bloodGroup">Blood Group</label>
+                                            <input type="text" name="std_bloodGroup">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_email">Email</label>
+                                            <input type="email" name="std_email">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_DateOfBirth">Date Of Birth</label>
+                                            <input type="date" name="std_DateOfBirth">
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_birthPlace">Place of Birth</label>
+                                            <input type="text" name="std_birthPlace">
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_religion">Religion</label>
+                                            <select name="std_religion" class="length100">
+                                                <option value="male">Muslim</option>
+                                                <option value="female">Non-Muslim</option>
+                                            </select>
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_nationality">Nationality</label>
+                                            <input type="text" name="std_nationality">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_state">State</label>
+                                            <input type="text" name="std_state">
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_city">City</label>
+                                            <input type="text" name="std_city">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_address">Address</label>
+                                            <input type="text" name="std_address">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- <hr> -->
+                                <!-- family details -->
+                                <div class="detailsCard">
+                                    <span>Family Details</span>
+                                    <div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_fatherName">Father Name</label>
+                                            <input type="text" name="std_fatherName">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_motherName">Mother Name</label>
+                                            <input type="text" name="std_motherName">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_P_state">State</label>
+                                            <input type="text" name="std_P_state">
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_P_city">City</label>
+                                            <input type="text" name="std_P_city">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_P_address">Address</label>
+                                            <input type="text" name="std_P_address">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_P_email">Parent Email</label>
+                                            <input type="email" name="std_P_email">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_P_contact">Parents Contact</label>
+                                            <input type="number" name="std_P_contact">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <hr> -->
+                                <!-- Guardian details -->
+                                <div class="detailsCard">
+                                    <span>Guardian Details</span>
+                                    <div class="data">
+                                        <label for="std_guardianName">Guardian Name</label>
+                                        <input type="text" name="std_guardianName">
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_G_state">State</label>
+                                            <input type="text" name="std_G_state">
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_G_city">City</label>
+                                            <input type="text" name="std_G_city">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_G_address">Address</label>
+                                            <input type="text" name="std_G_address">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_G_email">Guardian Email</label>
+                                            <input type="email" name="std_G_email">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_G_contact">Guardian Contact</label>
+                                            <input type="number" name="std_G_contact">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <hr> -->
+                                <!-- admission details -->
+                                <div class="detailsCard">
+                                    <span>Admission Details</span>
+                                    <div class="data">
+                                        <label for="std_previousSchoolName">Previous School Name</label>
+                                        <input type="text" name="std_previousSchoolName">
+                                    </div>
+                                    <span>Previous School Details</span>
+                                    <div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_previousSchoolState">State</label>
+                                            <input type="text" name="std_previousSchoolState">
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_previousSchoolCity">City</label>
+                                            <input type="text" name="std_previousSchoolCity">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_previousSchoolAddress">Address</label>
+                                            <input type="text" name="std_previousSchoolAddress">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_lastClass">Last Passing Class</label>
+                                            <input type="number" name="std_lastClass">
+                                        </div>
+                                        <div class="data inlineBlock length25">
+                                            <label for="std_lastClassYear">Last Passing Class Year</label>
+                                            <input type="number" name="std_lastClassYear">
+                                        </div>
+                                        <div class="data inlineBlock length50">
+                                            <label for="std_appliedClass">Class Applied For</label>
+                                            <input type="number" name="std_appliedClass">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button>Cancel</button>
+                                <button>Register</button>
                             </form>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-2">
-                    <div>
-                        others
-                    </div>
-                </div>
             </div>
+        </div>
         </div>
     </section>
 
-    <footer></footer>
+    <footer>
+
+    </footer>
 
 </body>
 <script src="./jquery-3.6.1.min.js"></script>
