@@ -1,7 +1,6 @@
 body{
     background: #feab19;
     padding: 2%;
-    
 }
 .main{
     border-radius: 25px;
@@ -17,12 +16,10 @@ body{
 .Main-Menu h6{
     font-size: 1.5rem;
     font-weight: 700;
-    /* text-align: center; */
 }
 .Main-Menu h6 a{
     text-decoration: none;
     color: orange;
-
 }
 ul{
     list-style: none;
@@ -37,9 +34,6 @@ li a:hover{
     color: #fff;   
 }
 
-/* li ul li{
-    background-color: rgb(246, 218, 166);
-} */
 ul li a{
     text-decoration: none;
     color: black;
@@ -79,7 +73,6 @@ ol,ul{
 #exm_operations{
     display: none;
     cursor: pointer;
-    /* background: rgb(159, 29, 29); */
 }
 #reg,
 #mng,
@@ -88,6 +81,4 @@ ol,ul{
 #teh,
 #exm{
     cursor: pointer;
-    /* background: rgb(200, 133, 133); */
-
 }
