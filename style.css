@@ -71,36 +71,6 @@ ol,ul{
     border-radius: 10px;
 }
 
-.data {
-    margin: 0.5% 0%;
-}
-
-input {
-    width: 100%;
-}
-
-.inlineBlock {
-    display: inline-block;
-}
-
-.length25 {
-    width: 24.5%;
-}
-.length20 {
-    width: 20%;
-}
-
-.length50 {
-    width: 49.5%;
-}
-
-.length75 {
-    width: 74.5%;
-}
-
-.length100 {
-    width: 100%;
-}
 #reg_operations,
 #mng_operations,
 #fee_operations,

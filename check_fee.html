@@ -35,7 +35,7 @@
                             <li id="mng" class="px-1 py-2 fw-semibold"><i class="bi bi-kanban-fill px-4"></i> Management
                                 <ul id="mng_operations">
                                     <li class="py-1"><i class="bi bi-bank2 px-4"></i> Class</li>
-                                    <li class="py-1"><i class="bi bi-calendar2-week-fill px-4"></i> Timetable</li>
+                                    <li class="py-1"><a href="./time_table.html"><i class="bi bi-calendar2-week-fill px-4"></i> Timetable</a></li>
                                     <li class="py-1"><a href="./attendence.html"><i class="bi bi-check-square-fill px-4"></i> Attendance</a></li>
                                 </ul>
                             </li>
@@ -77,54 +77,67 @@
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-8">
                                     <form action="">
-                                        <div class="detailsCard">
-                                            <div class="data inlineBlock length25">
-                                                <select name="sort" class="length100">
+
+                                        <div class="row detailsCard">
+                                            <div class="col-sm-2">
+                                                <select name="sort" class="form-select">
                                                     <option value="name">name</option>
                                                     <option value="id">Id</option>
                                                     <option value="class">Class</option>
                                                     <option value="not_paid">Fee Defaulter</option>
                                                 </select>
                                             </div>
-                                            <div class="data inlineBlock length75">
-                                                <input type="text" placeholder="Search">
+                                            <div class="col-sm-8">
+                                                <input type="text" placeholder="Search" class="form-control">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <button class="btn btn-secondary w-100"><i class="bi bi-search"></i>
+                                                    fatch</button>
                                             </div>
                                         </div>
                                         <div class="detailsCard">
-                                            <div class="data inlineBlock length25">
-                                                <h6 class="inlineBlock">G0034</h6>
+                                            <div class="row g-3 mb-1">
+                                                <div class="col-sm-4">
+                                                    <label for="Status">ID</label>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label for="Status">Name</label>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label for="Status">Status</label>
+                                                </div>
                                             </div>
-                                            <div class="data inlineBlock length25">
-                                                <h6 class="inlineBlock">Faraz Yasir</h6>
+                                            <div class="row g-3 mb-1">
+                                                <div class="col-sm-4">
+                                                    <input type="text" class="form-control" value="G0034" disabled>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <input type="text" class="form-control" value="Faraz Yasir"
+                                                        disabled>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <select name="sort" class="form-select">
+                                                        <option value="not_paid">Not Paid</option>
+                                                        <option value="paid">Paid</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="data inlineBlock length25">
-                                                <select name="sort" class="length100" disabled>
-                                                    <option value="not_paid">Not Paid</option>
-                                                    <option value="paid">Paid</option>
-                                                </select>
-                                            </div>
-                                            <div class="data inlineBlock length20">
-                                                <button>Update</button>
+                                            <div class="row g-3 mb-1">
+                                                <div class="col-sm-4">
+                                                    <input type="text" class="form-control" value="G0034" disabled>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <input type="text" class="form-control" value="Faraz Yasir"
+                                                        disabled>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <select name="sort" class="form-select">
+                                                        <option value="not_paid">Not Paid</option>
+                                                        <option value="paid">Paid</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="detailsCard">
-                                            <div class="data inlineBlock length25">
-                                                <h6 class="inlineBlock">G0034</h6>
-                                            </div>
-                                            <div class="data inlineBlock length25">
-                                                <h6 class="inlineBlock">Faraz Yasir</h6>
-                                            </div>
-                                            <div class="data inlineBlock length25">
-                                                <select name="sort" class="length100" disabled>
-                                                    <option value="not_paid">Not Paid</option>
-                                                    <option value="paid">Paid</option>
-                                                </select>
-                                            </div>
-                                            <div class="data inlineBlock length20">
-                                                <button>Update</button>
-                                            </div>
-                                        </div>
-                                        <button>Submit</button>
                                     </form>
                                 </div>
                                 <!-- <div class="col-sm-2"></div> -->

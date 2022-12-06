@@ -10,7 +10,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Fees</title>
+    <title>Time Table</title>
 </head>
 
 <body>
@@ -38,15 +38,17 @@
                             </li>
                             <li id="mng" class="px-1 py-2 fw-semibold"><i class="bi bi-kanban-fill px-4"></i> Management
                                 <ul id="mng_operations">
-                                    <li class="py-1"><i class="bi bi-bank2 px-4"></i> Class</li>
+                                    <li class="py-1"><a href="#"><i class="bi bi-bank2 px-4"></i> Class</li></a>
                                     <li class="py-1"><a href="./time_table.html"><i class="bi bi-calendar2-week-fill px-4"></i> Timetable</a></li>
                                     <li class="py-1"><a href="./attendence.html"><i class="bi bi-check-square-fill px-4"></i> Attendance</a></li>
                                 </ul>
                             </li>
                             <li id="fee" class="px-1 py-2 fw-semibold"><i class="bi bi-cash-coin px-4"></i> Fee
                                 <ul id="fee_operations">
-                                    <li class="py-1"><a href="./fee_status.html"><i class="bi bi-box-arrow-in-up-right px-4"></i> Update Status</a></li>
-                                    <li class="py-1"><a href="./check_fee.html"><i class="bi bi-clipboard-check-fill px-4"></i> Check Fee</a></li>
+                                    <li class="py-1"><a href="./fee_status.html"><i
+                                                class="bi bi-box-arrow-in-up-right px-4"></i> Update Status</a></li>
+                                    <li class="py-1"><a href="./check_fee.html"><i
+                                                class="bi bi-clipboard-check-fill px-4"></i> Check Fee</a></li>
                                 </ul>
                             </li>
                             <li id="std" class="px-1 py-2 fw-semibold"><i class="bi bi-person-fill px-4"></i> Students
@@ -76,7 +78,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="detailsCard">
-                                <h6>Fee Status</h6>
+                                <h6>Time Table</h6>
                             </div>
                             <div class="row">
                                 <div class="col-sm-2"></div>
@@ -86,10 +88,8 @@
                                         <div class="row detailsCard">
                                             <div class="col-sm-2">
                                                 <select name="sort" class="form-select">
-                                                    <option value="name">name</option>
-                                                    <option value="id">Id</option>
                                                     <option value="class">Class</option>
-                                                    <option value="not_paid">Fee Defaulter</option>
+                                                    <option value="teacher">Teacher</option>
                                                 </select>
                                             </div>
                                             <div class="col-sm-8">
@@ -100,52 +100,76 @@
                                                     fatch</button>
                                             </div>
                                         </div>
-                                        <div class="detailsCard">
-                                            <div class="row g-3 mb-1">
-                                                <div class="col-sm-4">
-                                                    <label for="Status">ID</label>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <label for="Status">Name</label>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <label for="Status">Status</label>
-                                                </div>
-                                            </div>
-                                            <div class="row g-3 mb-1">
-                                                <div class="col-sm-4">
-                                                    <input type="text" class="form-control" value="G0034" disabled>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <input type="text" class="form-control" value="Faraz Yasir"
-                                                        disabled>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select name="sort" class="form-select">
-                                                        <option value="not_paid">Not Paid</option>
-                                                        <option value="paid">Paid</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row g-3 mb-1">
-                                                <div class="col-sm-4">
-                                                    <input type="text" class="form-control" value="G0034" disabled>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <input type="text" class="form-control" value="Faraz Yasir"
-                                                        disabled>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <select name="sort" class="form-select">
-                                                        <option value="not_paid">Not Paid</option>
-                                                        <option value="paid">Paid</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <button class="btn btn-secondary mt-2">Cancel</button>
-                                            <button class="btn btn-secondary mt-2">Update</button>
-                                        </div>
                                     </form>
+                                    <div class="detailsCard">
+                                        <table class="table table-hover text-center w-100">
+                                            <tr>
+                                                <th>P#</th>
+                                                <th>Monday</th>
+                                                <th>Tuesday</th>
+                                                <th>Wednesday</th>
+                                                <th>Thursday</th>
+                                                <th>Friday</th>
+                                            </tr>
+                                            <tr>
+                                                <th>01 <span class="d-block">08:00 - 08:45</span></th>
+                                                <td>Subject 01</td>
+                                                <td>Subject 02</td>
+                                                <td>Subject 03</td>
+                                                <td>Subject 04</td>
+                                                <td>Subject 05</td>
+                                            </tr>
+                                            <tr>
+                                                <th>02 <span class="d-block">08:45 - 09:30</span></th>
+                                                <td>Subject 01</td>
+                                                <td>Subject 02</td>
+                                                <td>Subject 03</td>
+                                                <td>Subject 04</td>
+                                                <td>Subject 05</td>
+                                            </tr>
+                                            <tr>
+                                                <th>03 <span class="d-block">09:30 - 10:15</span></th>
+                                                <td>Subject 01</td>
+                                                <td>Subject 02</td>
+                                                <td>Subject 03</td>
+                                                <td>Subject 04</td>
+                                                <td>Subject 05</td>
+                                            </tr>
+                                            <tr>
+                                                <th>04 <span class="d-block">10:15 - 11:00</span></th>
+                                                <td>Subject 01</td>
+                                                <td>Subject 02</td>
+                                                <td>Subject 03</td>
+                                                <td>Subject 04</td>
+                                                <td>Subject 05</td>
+                                            </tr>
+                                            <tr>
+                                                <th>05 <span class="d-block">11:00 - 11:45</span></th>
+                                                <td>Subject 01</td>
+                                                <td>Subject 02</td>
+                                                <td>Subject 03</td>
+                                                <td>Subject 04</td>
+                                                <td>Subject 05</td>
+                                            </tr>
+                                            <tr>
+                                                <th>06 <span class="d-block">12:15 - 01:00</span></th>
+                                                <td>Subject 01</td>
+                                                <td>Subject 02</td>
+                                                <td>Subject 03</td>
+                                                <td>Subject 04</td>
+                                                <td>Subject 05</td>
+                                            </tr>
+                                            <tr>
+                                                <th>07 <span class="d-block">01:00 - 01:45</span></th>
+                                                <td>Subject 01</td>
+                                                <td>Subject 02</td>
+                                                <td>Subject 03</td>
+                                                <td>Subject 04</td>
+                                                <td>Subject 05</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
                                 </div>
                                 <!-- <div class="col-sm-2"></div> -->
                             </div>
