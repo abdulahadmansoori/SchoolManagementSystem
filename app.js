@@ -64,4 +64,12 @@ $(document).ready(function () {
         $("#exm").click(function () {
             $("#exm_operations").toggle(500);
         });
+        $("#hamburgar").click(function () { 
+            $("#reg").toggle(500);
+            $("#exm").toggle(500);
+            $("#teh").toggle(500);
+            $("#std").toggle(500);
+            $("#mng").toggle(500);
+            $("#fee").toggle(500);
+        })
 });
