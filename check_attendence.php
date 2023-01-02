@@ -20,63 +20,10 @@
     <section class="main">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2 Main-Menu overflow-auto">
-                    <div>
-                        <h6 class="text-center mb-4"><a href="./index.html"> School Management System</a></h6>
-                        <!-- navbar -->
-                        <ul>
-                            <li id="reg" class="px-1 py-2 fw-semibold"> <i class="bi bi-plus-circle px-4"></i>
-                                Registration
-                                <ul id="reg_operations">
-                                    <li class="py-1"><a href="./admission.html"><i
-                                                class="bi bi-person-fill-add px-4"></i> Add Student </a></li>
-                                    <li class="py-1"><a href="./employee.html"><i
-                                                class="bi bi-person-fill-check px-4"></i></i> Add Faculty</a></li>
-                                    <li class="py-1"><a href="./staff.html"><i
-                                                class="bi bi-person-fill-gear px-4"></i></i> Add staff</a></li>
-                                </ul>
-                            </li>
-                            <li id="mng" class="px-1 py-2 fw-semibold"><i class="bi bi-kanban-fill px-4"></i> Management
-                                <ul id="mng_operations">
-                                    <li class="py-1"><i class="bi bi-bank2 px-4"></i> Class</li>
-                                    <li class="py-1"><a href="./time_table.html"><i
-                                                class="bi bi-calendar2-week-fill px-4"></i> Timetable</a></li>
-                                    <li class="py-1"><a href="./attendence.html"><i
-                                                class="bi bi-check-square-fill px-4"></i> Attendance</a></li>
-                                </ul>
-                            </li>
-                            <li id="fee" class="px-1 py-2 fw-semibold"><i class="bi bi-cash-coin px-4"></i> Fee
-                                <ul id="fee_operations">
-                                    <li class="py-1"><a href="./fee_status.html"><i
-                                                class="bi bi-box-arrow-in-up-right px-4"></i> Update Status</a></li>
-                                    <li class="py-1"><a href="./check_fee.html"><i
-                                                class="bi bi-clipboard-check-fill px-4"></i> Check Fee</a></li>
-                                </ul>
-                            </li>
-                            <li id="std" class="px-1 py-2 fw-semibold"><i class="bi bi-person-fill px-4"></i> Students
-                                <ul id="std_operations">
-                                    <li class="py-1"><i class="bi bi-file-text px-4"></i> Details</li>
-                                    <li class="py-1"><i class="bi bi-file-text px-4"></i> Admissions</li>
-                                    <li class="py-1"><i class="bi bi-person-fill-up px-4"></i> Promote</li>
-                                </ul>
-                            </li>
-                            <li id="teh" class="px-1 py-2 fw-semibold"><i class="bi bi-person-circle px-4"></i> Teachers
-                                <ul id="teh_operations">
-                                    <li class="py-1"><i class="bi bi-file-text px-4"></i> Details</li>
-                                    <li class="py-1"><i class="bi bi-person-check-fill px-4"></i> Appoint</li>
-                                </ul>
-                            </li>
-                            <li id="exm" class="px-1 py-2 fw-semibold"><i class="bi bi-file-earmark-text-fill px-4"></i>
-                                Examination
-                                <ul id="exm_operations">
-                                    <li class="py-1"><i class="bi bi-graph-up px-4"></i> Results</li>
-                                    <li class="py-1"><i class="bi bi-calendar2-week-fill px-4"></i> Timetable</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-10 Main-Content overflow-auto">
+                <?php
+                include("./_navbar.php");
+                ?>
+                <div class="col-lg-10 Main-Content overflow-auto">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="detailsCard">
@@ -85,91 +32,6 @@
                             <div class="row">
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-8">
-                                    <form action="">
-                                        <div class="detailsCard row">
-                                            <div class="col-sm-6">
-                                                <select name="class" class="form-select">
-                                                    <option value="">Select Operation</option>
-                                                    <option value="mark">Mark Attendance</option>
-                                                    <option value="check">Check Attendance</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <button class="btn btn-secondary w-100">Next</button>
-                                            </div>
-                                        </div>
-                                        <div class="detailsCard">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <!-- <label for="class" class="form-label">Class</label> -->
-                                                    <select name="class" class="form-select">
-                                                        <option value="Class">Class</option>
-                                                        <option value="I">I</option>
-                                                        <option value="II">II</option>
-                                                        <option value="III">III</option>
-                                                        <option value="IV">IV</option>
-                                                        <option value="V">V</option>
-                                                        <option value="VI">VI</option>
-                                                        <option value="VII">VII</option>
-                                                        <option value="VIII">VIII</option>
-                                                        <option value="IX">IX</option>
-                                                        <option value="X">X</option>
-                                                        <option value="XI">XI</option>
-                                                        <option value="XII">XII</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <!-- <label for="section" class="form-label">Section</label> -->
-                                                    <select name="section" class="form-select">
-                                                        <option value="section">Section</option>
-                                                        <option value="A">A</option>
-                                                        <option value="B">B</option>
-                                                        <option value="C">C</option>
-                                                        <option value="D">D</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <!-- <label for="" class="form-label">Operation</label> -->
-                                                    <button class="btn btn-secondary w-100">Fatch Data</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="detailsCard ">
-                                            <table class="table table-hover w-100">
-                                                <tr>
-                                                    <th><div class="form-check"><input class="form-check-input" type="checkbox" id="gridCheck"></div></th>
-                                                    <th>ID</th>
-                                                    <th>NAME</th>
-                                                    <th>CLASS</th>
-                                                    <th>SECTION</th>
-                                                </tr>
-                                                <tr>
-                                                    <td><div class="form-check"><input class="form-check-input" type="checkbox" id="gridCheck"></div></td>
-                                                    <td>G0034</td>
-                                                    <td>Faraz Yasir</td>
-                                                    <td>XI</td>
-                                                    <td>B</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><div class="form-check"><input class="form-check-input" type="checkbox" id="gridCheck"></div></td>
-                                                    <td>G0034</td>
-                                                    <td>Faraz Yasir</td>
-                                                    <td>XI</td>
-                                                    <td>B</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><div class="form-check"><input class="form-check-input" type="checkbox" id="gridCheck"></div></td>
-                                                    <td>G0034</td>
-                                                    <td>Faraz Yasir</td>
-                                                    <td>XI</td>
-                                                    <td>B</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <button class="btn bg-warning text-white">Submit</button>
-                                    </form>
-
                                     <!-- check attendance -->
                                     <div class="detailsCard">
                                         <div class="row">

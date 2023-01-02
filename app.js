@@ -1,7 +1,7 @@
 console.log($);
-
+var serializedData;
 $(document).ready(function () {
-    console.log("document is ready");
+    console.log("main document is ready");
 
 
     // $('p').click(function(){
@@ -43,33 +43,82 @@ $(document).ready(function () {
     // });
 
         $("#fee").click(function () {
-            $("#fee_operations").toggle(500);
+            $("#fee_operations").slideToggle(500);
+            console.log("mouseover")
         });
 
         $("#reg").click(function () {
-            $("#reg_operations").toggle(500);
+            $("#reg_operations").slideToggle(500);
         });
 
         $("#mng").click(function () {
-            $("#mng_operations").toggle(500);
+            $("#mng_operations").slideToggle(500);
         });
 
         $("#std").click(function () {
-            $("#std_operations").toggle(500);
+            $("#std_operations").slideToggle(500);
         });
 
         $("#teh").click(function () {
-            $("#teh_operations").toggle(500);
+            $("#teh_operations").slideToggle(500);
         });
         $("#exm").click(function () {
-            $("#exm_operations").toggle(500);
+            $("#exm_operations").slideToggle(500);
         });
-        $("#hamburgar").click(function () { 
-            $("#reg").toggle(500);
-            $("#exm").toggle(500);
-            $("#teh").toggle(500);
-            $("#std").toggle(500);
-            $("#mng").toggle(500);
-            $("#fee").toggle(500);
-        })
+        $("#stf").click(function () {
+            $("#stf_operations").slideToggle(500);
+        });
+        // $("#hamburgar").click(function () { 
+        //     $("#reg").toggle(500);
+        //     $("#exm").toggle(500);
+        //     $("#teh").toggle(500);
+        //     $("#std").toggle(500);
+        //     $("#mng").toggle(500);
+        //     $("#fee").toggle(500);
+        // })
+        // count = 0;
+        // $("#hambargar").click(function () { 
+        //     count++;
+        //     $("#nav_links").animate({opacity:'toggle'},0);
+        //     $("#nav").animate({width:'toggle'},0);
+        //     if(count==1){
+        //         $("#Main-Content").addClass("col-lg-12").removeClass("col-lg-10");
+        //     }
+        //     else if(count==2){
+        //         $("#Main-Content").removeClass("col-lg-12").addClass("col-lg-10");
+        //         count=0;
+        //     }
+        // })
+
+        // // student registration
+        // var request;
+        // $('#reg_student').on("click", function(event){
+        //     console.log("in register std function");
+        //     event.preventDefault();
+        //     if (request) {
+        //         request.abort();
+        //     }
+        //     var $form = $(this);
+        //     var $inputs = $form.find("input, select, button, textarea");
+        //     var str ="{";
+        //     for(i=0;i<$("input").length;i++){
+        //         key = $("input")[i].name;
+        //         value = $("input")[i].value;
+        //         str += `"${key}" : "${value}"`;
+        //         if(i<$("input").length-1){
+        //             str += ",";
+        //         }
+        //     }
+        //     str +="}";
+        //     $inputs.prop("disabled", true);
+        //     $.ajax({
+        //         url: "http://localhost/SMS/api/student/addStudent.php",
+        //         type: "POST",
+        //         data: str,
+        //         success: function(data) {   
+        //             console.log(data);
+        //         }
+        //     });
+        //     $inputs.prop("disabled", false);
+        // });
 });

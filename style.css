@@ -1,11 +1,14 @@
-body{
+body {
     background: #feab19;
     padding: 2%;
+    /* overflow: hidden; */
 }
-.main{
+
+.main {
     border-radius: 25px;
     border: 8px solid #ffc661;
 }
+
 .Main-Menu {
     height: 90vh;
     background: rgb(255, 255, 255);
@@ -13,32 +16,42 @@ body{
     border-bottom-left-radius: 18px;
     padding: 2% 0.5% 0% 0.5%;
 }
-.Main-Menu h6{
+
+.Main-Menu h6 {
     font-size: 1.5rem;
     font-weight: 700;
 }
-.Main-Menu h6 a{
+
+.Main-Menu h6 a {
     text-decoration: none;
     color: orange;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-li:hover{
+li:hover {
     background-color: orange;
     border-radius: 5px;
-    color: #fff;   
-}
-li a:hover{
-    color: #fff;   
+    color: #fff;
 }
 
-ul li a{
+li ul li {
+    background-color: rgb(232, 151, 0);
+}
+
+li a:hover {
+    color: #fff;
+}
+
+ul li a {
     text-decoration: none;
     color: black;
 }
-ol,ul{
+
+ol,
+ul {
     padding-left: 0rem;
 }
 
@@ -70,15 +83,41 @@ ol,ul{
 #fee_operations,
 #std_operations,
 #teh_operations,
-#exm_operations{
+#exm_operations,
+#stf_operations {
     display: none;
     cursor: pointer;
 }
+
 #reg,
 #mng,
 #fee,
 #std,
 #teh,
-#exm{
+#exm,
+#stf {
     cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: orange;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(232, 151, 0);
+}
+.update_student{
+    display: none;
 }

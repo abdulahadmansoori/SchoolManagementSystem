@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="./jquery-3.6.1.min.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Fees</title>
@@ -20,59 +20,10 @@
     <section class="main">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2 Main-Menu overflow-auto">
-                    <div>
-                        <h6 class="text-center mb-4"><a href="./index.html"> School Management System</a></h6>
-                        <!-- navbar -->
-                        <ul>
-                            <li id="reg" class="px-1 py-2 fw-semibold"> <i class="bi bi-plus-circle px-4"></i>
-                                Registration
-                                <ul id="reg_operations">
-                                    <li class="py-1"><a href="./admission.html"><i
-                                                class="bi bi-person-fill-add px-4"></i> Add Student </a></li>
-                                    <li class="py-1"><a href="./employee.html"><i
-                                                class="bi bi-person-fill-check px-4"></i></i> Add Faculty</a></li>
-                                    <li class="py-1"><a href="./staff.html"><i
-                                                class="bi bi-person-fill-gear px-4"></i></i> Add staff</a></li>
-                                </ul>
-                            </li>
-                            <li id="mng" class="px-1 py-2 fw-semibold"><i class="bi bi-kanban-fill px-4"></i> Management
-                                <ul id="mng_operations">
-                                    <li class="py-1"><i class="bi bi-bank2 px-4"></i> Class</li>
-                                    <li class="py-1"><a href="./time_table.html"><i class="bi bi-calendar2-week-fill px-4"></i> Timetable</a></li>
-                                    <li class="py-1"><a href="./attendence.html"><i class="bi bi-check-square-fill px-4"></i> Attendance</a></li>
-                                </ul>
-                            </li>
-                            <li id="fee" class="px-1 py-2 fw-semibold"><i class="bi bi-cash-coin px-4"></i> Fee
-                                <ul id="fee_operations">
-                                    <li class="py-1"><a href="./fee_status.html"><i class="bi bi-box-arrow-in-up-right px-4"></i> Update Status</a></li>
-                                    <li class="py-1"><a href="./check_fee.html"><i class="bi bi-clipboard-check-fill px-4"></i> Check Fee</a></li>
-                                </ul>
-                            </li>
-                            <li id="std" class="px-1 py-2 fw-semibold"><i class="bi bi-person-fill px-4"></i> Students
-                                <ul id="std_operations">
-                                    <li class="py-1"><i class="bi bi-file-text px-4"></i> Details</li>
-                                    <li class="py-1"><i class="bi bi-file-text px-4"></i> Admissions</li>
-                                    <li class="py-1"><i class="bi bi-person-fill-up px-4"></i> Promote</li>
-                                </ul>
-                            </li>
-                            <li id="teh" class="px-1 py-2 fw-semibold"><i class="bi bi-person-circle px-4"></i> Teachers
-                                <ul id="teh_operations">
-                                    <li class="py-1"><i class="bi bi-file-text px-4"></i> Details</li>
-                                    <li class="py-1"><i class="bi bi-person-check-fill px-4"></i> Appoint</li>
-                                </ul>
-                            </li>
-                            <li id="exm" class="px-1 py-2 fw-semibold"><i class="bi bi-file-earmark-text-fill px-4"></i>
-                                Examination
-                                <ul id="exm_operations">
-                                    <li class="py-1"><i class="bi bi-graph-up px-4"></i> Results</li>
-                                    <li class="py-1"><i class="bi bi-calendar2-week-fill px-4"></i> Timetable</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-10 Main-Content overflow-auto">
+                <?php
+                include("./_navbar.php");
+                ?>
+                <div class="col-lg-10 Main-Content overflow-auto">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="detailsCard">
@@ -142,8 +93,6 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-secondary mt-2">Cancel</button>
-                                            <button class="btn btn-secondary mt-2">Update</button>
                                         </div>
                                     </form>
                                 </div>
