@@ -1,3 +1,4 @@
 Use Case
 
 - Registration 
+- Create Timetable
