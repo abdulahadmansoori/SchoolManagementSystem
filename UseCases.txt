@@ -1,0 +1,5 @@
+Use Case
+
+- Registration 
+- Create Timetable
+- Employee Salary
